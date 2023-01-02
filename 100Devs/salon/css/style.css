@@ -1,0 +1,446 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+
+html {
+  font-size: 62.5%;
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  /* border: solid 1px red; */
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  height: 5rem;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.nofontstyle {
+  font-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar {
+  font-size: max(.75rem, 1vw);
+  float: left;
+  background: white;
+  list-style: none;
+  padding: 2rem .25rem;
+  height: inherit;
+  text-align: center;
+  max-height: 5rem;
+}
+
+.navicon {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 0;
+}
+
+.navicon img {
+  display: block;
+  margin: 0 auto;
+  max-height: 5rem;
+}
+
+.widepadding {
+  width: 20%;
+}
+
+.mediumpadding {
+  width: calc(50%/6);
+  min-width: fit-content;
+}
+
+.skinnypadding {
+  width: 5%;
+
+}
+
+.flexpadding {
+  position: absolute;
+  right: 0;
+  width: 20%;
+}
+
+.background {
+  margin: 0;
+  background-image: url("../img/homeBackground.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.alignsplash {
+  margin: 0;
+  color: white;
+  display: inline-block;
+  position: relative;
+  left: 10%;
+  width: 60%;
+}
+
+
+h1[class="alignsplash"] {
+  margin-top: 13vw;
+  font-size: max(calc(7vw), 3rem);
+}
+
+p[class="alignsplash"] {
+  display: block;
+  font-size: calc(1rem + 1vw);
+  margin-top: 2rem;
+  margin-bottom: calc(.5rem + 3vw);
+}
+
+span[class="alignsplash"] {
+  white-space: nowrap;
+  font-size: 2rem;
+  transform: rotate(90deg);
+  width: fit-content;
+  position: absolute;
+  left: calc(100% - max(15.5rem, 15vw));
+  top: max(30vw, 18rem);
+}
+
+
+.buttonstyle:hover {
+  background: black;
+}
+
+.resourcebox {
+  background: black;
+  color: white;
+}
+
+.background .resourcebox>* {
+  display: inline-block;
+  padding: 0 10%;
+  width: 100%;
+}
+
+.buttonstyle {
+  display: block;
+  width: fit-content;
+  font-size: 2rem;
+  padding: 3rem 2%;
+  cursor: pointer;
+}
+
+button[class~="buttonstyle"] {
+  margin-bottom: min(12vw, 12rem);
+}
+
+.background div {
+  display: inline-block;
+  width: 20%;
+  min-width: 300px;
+}
+
+.background .resourcebox h4 {
+  margin: 2rem 0;
+  padding: 2rem 10%;
+  font-size: 2rem;
+  border-left: 3px solid white;
+}
+
+.background .resourcebox p {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.background .resourcebox p>span {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+div[class~="resourcebox"] {
+  padding-bottom: 3rem;
+  width: 22%;
+  max-width: 450px;
+}
+
+.resourcebox .buttonstyle {
+  position: relative;
+  left: 10%;
+  margin: 1rem 0;
+  padding: 2rem 2%;
+  width: 60%;
+}
+
+.offerings {
+  margin-top: 15rem;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+.feature {
+  position: relative;
+  left: calc(50vw);
+  transform: translatex(-150%);
+  display: inline-block;
+  width: max(320px, 20%);
+  padding: 0 2%;
+}
+
+.feature img {
+  display: block;
+  margin: 0 auto;
+}
+
+.feature h5 {
+  text-align: center;
+  font-size: min(280%, 2.5rem);
+}
+
+.feature p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.bottommarg {
+  height: 15rem;
+}
+
+.shade {
+  position: relative;
+  background-color: rgb(237, 237, 237);
+}
+
+.altfontcolor {
+  color: black;
+}
+
+.shade h4 {
+  margin-top: 12rem;
+  font-size: 7rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.shade p {
+  display: block;
+  font-size: 1.5rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.shade .bottommarg {
+  height: 5rem;
+}
+
+video {
+  height: 45rem;
+  max-width: 100vw;
+}
+
+.group {
+  display: inline-block;
+  width: max(320px, 35%);
+  margin-left: 10%;
+}
+
+.vid {
+  display: inline-block;
+  position: relative;
+  left: 10%;
+}
+
+.shade button {
+  margin-bottom: 0;
+}
+
+.staff .feature img {
+  width: 100%;
+}
+
+.spacer {
+  display: inline-block;
+  width: 2%;
+  height: 100%;
+}
+
+.staff>.offerings {
+  left: 0%;
+  transform: translatex(0%);
+}
+
+.staff .feature {
+  margin-bottom: 5rem;
+}
+
+.staff p {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 3rem;
+  padding: 1rem 0;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+section[class="promo background"] {
+  background-image: url("../img/promoBackGround.PNG");
+  background-size: contain;
+  width: max(60%, 960px);
+  margin: 0 auto;
+}
+
+.promo h4 {
+  margin: 10rem 0 3rem 0;
+  padding: 2rem 0;
+  margin-left: 10%;
+  font-size: 2rem;
+  display: inline-block;
+  max-width: 65%;
+}
+
+.promo p {
+  margin-left: 10%;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  max-width: min(55%, 75vw);
+}
+
+.promo p>span {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.promo button {
+  margin-bottom: 12rem;
+}
+
+
+h3 {
+  font-size: 5rem;
+  margin: 15rem auto 3rem auto;
+  text-align: center;
+}
+
+.galleryshot {
+  width: max(300px, calc(91%/3));
+  margin: 0 1%;
+  position: relative;
+  left: 50%;
+  transform: translatex(-160%);
+}
+
+.galleryshot img {
+  margin: 3% 0;
+  width: max(300px, calc(91%/3));
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+div[class~=gallery] {
+  width: max(min(100vw, 960px), 60%);
+  margin: 0 auto;
+  position: relative;
+}
+
+.addimage img {
+  filter: brightness(25%);
+}
+
+.addimage span {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  float: left;
+  font-size: 30rem;
+  color: grey;
+  width: 100%;
+  height: calc(100%/3);
+  text-align: center;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1200px) {
+  .group {
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .vid {
+    left: 50%;
+    transform: translatex(-50%);
+  }
+
+  .shade button {
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+
+  .feature {
+    transform: translatex(-100%);
+  }
+
+  .galleryshot {
+    transform: translatex(calc(-160% * 2 / 3));
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .feature {
+    transform: translatex(-50%);
+  }
+
+  .galleryshot {
+    transform: translatex(calc(-160% / 3));
+  }
+
+  .flexpadding {
+    width: fit-content;
+  }
+}

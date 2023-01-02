@@ -1,0 +1,315 @@
+/******************************************
+/* CSS
+/*******************************************/
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  /* border: solid 1px red; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+nav li {
+  font-size: 1.3rem;
+  list-style: none;
+  float: left;
+  color: white;
+  background-color: black;
+  border-left: 1px solid white;
+  font-weight: bold;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.nopad {
+  padding: 0;
+}
+
+.bbclogo {
+  position: relative;
+  height: 100%;
+  margin: auto;
+  display: block;
+  max-width: 90%;
+}
+
+.signon {
+  position: relative;
+  vertical-align: middle;
+}
+
+.logolist {
+  width: 10.1694915254%;
+}
+
+.listsmall {
+  width: 6.96%;
+  text-align: center;
+}
+
+.listmed {
+  width: 8.474576%;
+}
+
+.listbig {
+  width: 10.1694915254%;
+  text-indent: 7%;
+}
+
+.morelabel {
+  display: inline-block;
+  width: 70%;
+}
+
+.listbigger {
+  width: 10.1694915254%;
+}
+
+.listsearch {
+  width: 13.559322%;
+}
+
+nav form {
+  width: 86%;
+  margin: auto;
+  background: white;
+  height: 2rem;
+  position: relative;
+  top: 1.25rem;
+}
+
+.navarrow {
+  font-size: .75rem;
+  display: inline-block;
+  max-width: 10%;
+  position: relative;
+  top: -5%;
+  right: -3%;
+}
+
+form input {
+  width: inherit;
+  text-indent: 7%;
+  outline: none;
+  border: none;
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+
+}
+
+.searchlogo {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  position: absolute;
+  right: 2%;
+}
+
+h1,
+.newsheader {
+  font-size: 3rem;
+  width: 49%;
+  margin: 0;
+  display: inline-block;
+  padding-top: 3rem;
+  color: #2b2b2b;
+  margin-left: 1%;
+}
+
+.newsheader {
+  width: 100%;
+}
+
+.newsheader::first-letter {
+  color: red;
+  font-weight: 900;
+}
+
+time {
+  font-size: 3rem;
+  width: 47%;
+  float: right;
+  text-align: right;
+  padding-top: 3rem;
+  color: grey;
+  font-weight: 500;
+  margin-right: 3%;
+}
+
+.bottomsec {
+  margin: 0;
+  padding: 0;
+}
+
+.leftsec {
+  width: 100%;
+  position: relative;
+}
+
+.rightsec {
+  display: inline-block;
+  margin: 0 0 0 2%;
+  width: 50%;
+  position: relative;
+  right: 0;
+}
+
+.bigsec {
+  position: relative;
+  width: 46%;
+  margin: 1% 0 0 1%;
+  display: inline-block;
+  color: white;
+}
+
+.lefttext {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0 0 2% 1%;
+}
+
+.lefttext h2 {
+  font-size: 3rem;
+}
+
+.lefttext p,
+.lefttext span {
+  display: block;
+  font-size: 2rem;
+}
+
+.righttext h2 {
+  font-size: 2.5rem;
+  margin: 2%;
+}
+
+.righttext p,
+.righttext span {
+  display: block;
+  font-size: 1.5rem;
+  margin: 2%;
+}
+
+.lefttext>span::first-letter {
+  color: red;
+}
+
+.righttext>span::first-letter {
+  color: red;
+}
+
+.topleft span::first-letter {
+  color: lightblue;
+}
+
+.topright span::first-letter {
+  color: red;
+}
+
+.bottomleft span::first-letter {
+  color: lightblue;
+}
+
+.bottomright span::first-letter {
+  color: grey;
+}
+
+.smallsec {
+  display: inline-block;
+  width: 44.5%;
+  color: white;
+}
+
+.medsec {
+  margin: 1% 1%;
+  display: inline-block;
+  width: 30.9%;
+  color: black;
+  text-decoration: none;
+}
+
+.smallsec>img {
+  width: 100%;
+  height: 100%;
+}
+
+.topleft,
+.topright {
+  margin: 0 0 .5% 3.5%;
+}
+
+
+.bottomleft,
+.bottomright {
+  margin: .5% 0 0 3.5%;
+}
+
+section[class="rightsec"] div {
+  position: absolute;
+  width: inherit;
+}
+
+.toprow {
+  bottom: 53%;
+}
+
+.bottomrow {
+  bottom: 2%;
+}
+
+.medsec>img {
+  width: 100%;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1150px) {
+  .bigsec {
+    width: 100%;
+    display: block;
+    margin: 2% auto;
+  }
+
+  .rightsec {
+    width: 100%;
+    display: block;
+    margin: 2% auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .rightsec .righttext h2,
+  .rightsec .righttext p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

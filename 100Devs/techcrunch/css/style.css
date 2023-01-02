@@ -1,0 +1,313 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+html {
+  font-size: 62.5%;
+  color: #999999;
+
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  /* border: solid 1px red; */
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.mobilenav {
+  width: 100%;
+  position: relative;
+  display: none;
+}
+
+nav {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  width: 21rem;
+  font-size: 3rem;
+  float: left;
+  min-height: 105rem;
+}
+
+nav li {
+  margin: 1.5rem 0;
+}
+
+li {
+  list-style: none;
+}
+
+.speciallink {
+  color: #ffa63c;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.smalltext {
+  font-size: 2rem;
+  margin: 1rem 0 3rem 0;
+}
+
+.divider {
+  margin: 0;
+}
+
+nav li:last-of-type {
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+nav img {
+  height: 2.5rem;
+  vertical-align: middle;
+}
+
+nav img:first-of-type {
+  height: 100%;
+}
+
+.landing {
+  position: relative;
+  float: left;
+  display: inline-block;
+  width: calc(96% - 23rem - max(calc(38% - 23rem), 522px));
+  margin: 1rem 2% 0 2%;
+}
+
+.landing img {
+  max-height: 33rem;
+}
+
+.titleStream {
+  display: inline-block;
+  width: max(calc(38% - 23rem), 522px);
+  margin-top: 1rem;
+}
+
+.latestList {
+  display: inline-block;
+  width: calc(100% - 23rem);
+  position: relative;
+}
+
+.extraCrunch {
+  color: #e5ab54;
+  font-size: 2rem;
+  height: auto;
+}
+
+h1 {
+  color: black;
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.landing p,
+.landing span {
+  display: block;
+  margin: 1rem 0;
+}
+
+p {
+  color: #999999;
+  font-size: 2rem;
+}
+
+span {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h2,
+h4 {
+  color: black;
+  font-size: 3.4rem;
+  font-weight: 800;
+}
+
+ul {
+  float: left;
+}
+
+.titleStream span {
+  border-bottom: solid 1px #999999;
+  padding: 1.5rem 0;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+h3 {
+  color: black;
+  font-size: 2rem;
+  margin: 2rem 0;
+  display: block;
+  position: relative;
+  width: calc(98% - 23rem);
+  left: calc(23rem + 2%);
+}
+
+div.clearfix {
+  height: 1rem;
+  position: relative;
+  width: calc(98% - 23rem);
+  left: calc(23rem + 2%);
+}
+
+.latestList {
+  border-top: solid 1px #999999;
+  position: relative;
+  width: calc(98% - 23rem);
+  left: 2%;
+}
+
+.latestList a>* {
+  float: left;
+  width: calc(94%/3);
+  margin: 3rem 0;
+}
+
+p.subtext {
+  margin: 3rem 3%;
+}
+
+.latestList a>div>* {
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.timestamp {
+  color: #999999;
+}
+
+.selected>* {
+  color: #999999;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media screen and (max-width: 1620px) {
+
+  .landing img {
+    max-width: 96%;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .landing {
+    float: none;
+    width: calc(98% - 23rem);
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #999999;
+    margin-right: 0;
+  }
+
+  .titleStream {
+    width: calc(98% - 23rem);
+    position: relative;
+    margin-top: 3rem;
+    left: 2%;
+  }
+
+  nav {
+    min-height: 150rem;
+  }
+
+  @media screen and (max-width: 875px) {
+
+    nav img:first-of-type {
+      height: auto;
+    }
+
+    .landing,
+    .titleStream,
+    .latestList,
+    h3,
+    .latestList li a>* {
+      display: block;
+      width: 98%;
+      margin: 0 auto;
+      left: 0;
+    }
+
+    .latestList li a img {
+      width: auto;
+      margin-top: 3rem;
+    }
+
+    h4 {
+      margin-top: 3rem;
+    }
+
+    nav {
+      display: none;
+      min-height: 0;
+    }
+
+    .mobilenav {
+      position: relative;
+      display: block;
+      height: 5rem;
+      width: 98%;
+      margin: 2rem auto;
+      float: none;
+    }
+
+    .mobilenav>a img,
+    .mobilenav>a {
+      width: none;
+      height: 4.5rem;
+      float: right;
+    }
+
+    .mobilenav>a img,
+    nav img:first-of-type,
+    .mobilenav>a {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0 2%;
+    }
+
+  }
+
+}

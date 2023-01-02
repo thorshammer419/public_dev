@@ -1,0 +1,432 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  /* border: solid 1px red; */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: #f2f7f8;
+}
+
+nav li {
+  position: relative;
+  max-width: 100px;
+  width: 12.5%;
+  font-size: 1.3rem;
+  list-style: none;
+  float: right;
+  color: darkgray;
+  background-color: none;
+  font-weight: bold;
+  height: 5rem;
+}
+
+nav span {
+  display: block;
+  margin: 18% 10%;
+}
+
+.sectionWelcome {
+  background-image: url("../img/background_welcome.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.sectionAboutUs {
+  background-image: url("../img/background_aboutus.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.sectionHours {
+  background-image: url("../img/background_hours.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.shopping {
+  position: absolute;
+  height: 70%;
+  bottom: 6%;
+  left: 10%;
+}
+
+.search {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  height: 60%;
+
+}
+
+h1 {
+  font-size: 10rem;
+  padding-left: 6%;
+  padding-top: 8%;
+  padding-bottom: 2%;
+  margin: 0;
+}
+
+h2 {
+  font-size: 9rem;
+}
+
+form {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 35%;
+  margin: 0 0 0 6%;
+  border: solid 2px lightgrey;
+  background: white;
+  min-width: 300px;
+
+}
+
+.searchloc {
+  position: relative;
+  height: 5rem;
+}
+
+.social {
+  height: 34rem;
+}
+
+.socbar {
+  margin-top: 5rem;
+  padding-left: 6%;
+  height: 3rem;
+}
+
+.searchlogo {
+  position: relative;
+  top: 20%;
+  margin-left: 2%;
+  height: 50%;
+}
+
+.searchbar {
+  position: relative;
+  height: 100%;
+  outline: 0;
+  border: 0;
+  text-indent: 3%;
+  font-size: 1.25rem;
+  width: 86%;
+}
+
+.locationbutton {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  border: solid 2px rgb(201, 54, 0);
+  color: white;
+  background: orangered;
+  padding: 0 2%;
+  white-space: nowrap;
+  border-radius: 5%;
+}
+
+.socicon {
+  float: left;
+  height: inherit;
+}
+
+.socbar span {
+  position: relative;
+  float: left;
+  display: inline-block;
+  padding: 0 5% 0 0.5%;
+  font-weight: 900;
+  font-size: 2.5rem;
+  height: inherit;
+
+}
+
+div:not(.gallerybar)>span:first-child {
+  display: block;
+  font-size: 4rem;
+  color: DarkOrange;
+  padding-top: 13rem;
+}
+
+div[class="contentAboutUs"] {
+  padding-left: calc(55% - 325px);
+  padding-right: calc(21% - 75px);
+  min-width: 400px;
+}
+
+p {
+  font-size: 3rem;
+}
+
+.discover {
+  height: 5rem;
+  padding-bottom: 35rem;
+
+}
+
+.discoverbutton {
+  float: left;
+  display: inline-block;
+  font-size: 2rem;
+  height: inherit;
+  border: solid 2px rgb(201, 54, 0);
+  border-right: 0;
+  background: orangered;
+  color: white;
+  padding: 0 2%;
+  white-space: nowrap;
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+.discoverarrow {
+  float: left;
+  height: inherit;
+  color: white;
+  font-size: 2rem;
+  background: rgb(253, 160, 78);
+  border: darkorange;
+  padding: 0 1%;
+  border-top-right-radius: 5%;
+  border-bottom-right-radius: 5%;
+}
+
+div[class="contentAboutUs"]>* {
+  margin-bottom: 5rem;
+}
+
+body {
+  background-color: rgb(235, 238, 240);
+}
+
+div[class="contentOrder"] h2 {
+  margin-top: 2rem;
+}
+
+div[class="contentOrder"]:first-child {
+  display: block;
+  text-align: center;
+}
+
+.contentOrder li {
+  max-width: 200px;
+  width: calc(100%/5);
+  font-size: 2rem;
+  list-style: none;
+  color: darkgray;
+  float: left;
+  background-color: none;
+  font-weight: bold;
+  height: 5rem;
+  border-bottom: darkgrey solid 2px;
+  margin-top: 5rem;
+
+}
+
+.contentOrder ul {
+  margin-left: calc(50% - (min(200px, 100%/5)*2.5));
+}
+
+.menuphoto {
+  width: 1306px;
+  margin: auto;
+}
+
+.menuphoto a {
+  display: inline-block;
+  margin: 3rem auto;
+  padding: 2%;
+}
+
+li.selectedMenu {
+  color: darkorange;
+  border-bottom: darkorange solid 2px;
+}
+
+.gallerybar {
+  text-align: center;
+  padding-bottom: 10rem;
+}
+
+.gallerybar span {
+  display: inline-block;
+  color: darkorange;
+  font-size: 5rem;
+  margin: 0 .25%;
+  padding: 0;
+  vertical-align: middle;
+}
+
+
+.gallerybar span.selectedGallery {
+  color: orangered;
+  font-size: 7rem;
+}
+
+.titleBooking {
+  display: block;
+  font-size: 4rem;
+  color: DarkOrange;
+  padding-top: 15rem;
+  text-align: center;
+}
+
+.sectionBooking h2 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.sectionBooking a {
+  display: block;
+  margin: 0 auto;
+  width: 5%;
+  min-width: 100px;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.reviewPhoto {
+  display: block;
+  margin: 0 auto;
+  width: 5%;
+  margin-top: 5rem;
+  cursor: pointer;
+}
+
+.sectionBooking a>img {
+  width: 100%;
+}
+
+.phoneNumber {
+  display: block;
+  font-size: 5rem;
+  color: darkorange;
+  padding-top: 2rem 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem 0;
+  font-weight: 600;
+}
+
+.days {
+  display: inline-block;
+  width: 50%;
+  padding: 2rem 10%;
+  margin: 0;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.times {
+  display: inline-block;
+  width: 50%;
+  padding: 2rem 10%;
+  margin: 0;
+  border: none;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+video {
+  display: block;
+  width: 79%;
+  max-width: 1500px;
+  margin: 0 15% 0 6%;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+}
+
+.reviewer {
+  font-size: 3rem;
+  padding-bottom: 0;
+}
+
+.reviewerJob {
+  text-align: center;
+  color: darkgrey;
+  font-size: 1.5rem;
+}
+
+.stars {
+  text-align: center;
+  font-size: 3rem;
+  color: darkorange;
+  padding: 2rem 0;
+}
+
+.sectionBooking p {
+  font-style: italic;
+  font-size: 2rem;
+  color: rgb(73, 73, 73);
+  width: 90%;
+  margin: auto;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 1306px) {
+  .menuphoto {
+    width: 934px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 934px) {
+  .menuphoto {
+    width: 595px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 595px) {
+  .menuphoto {
+    width: 284px;
+    margin: 0 auto;
+  }
+}

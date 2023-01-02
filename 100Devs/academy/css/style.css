@@ -1,0 +1,330 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+html {
+  font-size: 62.5%;
+  color: black;
+
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Lato, Arial, sans-serif;
+  /* border: solid 1px red; */
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: #006aec;
+  font-weight: 550;
+}
+
+nav li {
+  list-style-type: none;
+  float: left;
+  height: 7rem;
+  font-size: 3rem;
+  font-weight: 550;
+  line-height: 7rem;
+}
+
+.courses li,
+.subnav li {
+  margin: 0 3rem;
+}
+
+.courses:first-child li:first-child a:after {
+  content: " ▼";
+  font-size: 2rem;
+}
+
+/* .courses:first-child li:first-child {
+  margin-left: calc(34vw - 33rem - 15rem - 3rem);
+
+}
+
+.subnav:last-child li:first-child {
+  margin-right: 21rem;
+} */
+
+nav {
+  border-bottom: solid 1px #999999;
+  position: relative;
+  width: 100%;
+}
+
+form,
+input {
+  border: none;
+  background: #eeeeee;
+  height: 4rem;
+  line-height: 4rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 27rem;
+  float: left;
+}
+
+form {
+  width: 33rem;
+}
+
+input::placeholder {
+  color: #006aec;
+  font-weight: 550;
+}
+
+form a img {
+  vertical-align: middle;
+  position: relative;
+  top: -.1rem;
+}
+
+form a {
+  position: relative;
+  left: 1.5rem;
+  transform: translateX(-50%);
+}
+
+.coursesContent,
+.subnavContent {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subnavContent {
+  margin-left: 5rem;
+}
+
+.logo {
+  width: 26rem;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.subnav,
+.courses {
+  width: calc(50% - 13rem);
+  float: left;
+}
+
+.subnav li {
+  float: right;
+  width: 11rem;
+  text-align: center;
+}
+
+.subnav>img {
+  display: none;
+  cursor: pointer;
+  vertical-align: middle;
+  margin-right: 3rem;
+  width: 5rem;
+}
+
+.landingimage,
+.landingcontent {
+  position: relative;
+  width: 50%;
+  float: left;
+  margin: 10rem 0 5rem 0;
+}
+
+.landingcontent li {
+  list-style-type: none;
+  float: left;
+  height: 7rem;
+  margin-bottom: 2rem;
+  width: 20rem
+}
+
+.landingcontent ul {
+  margin-top: 5rem;
+}
+
+.landingcontent a {
+  background-color: #006aec;
+  color: white;
+  font-size: 3rem;
+  padding: 2rem 2rem;
+  margin-right: 2rem;
+  border-radius: 6px;
+  font-weight: 400;
+  position: relative;
+  top: 2rem;
+}
+
+.landingimage img {
+  float: right;
+  margin: 2rem;
+}
+
+h1 {
+  font-size: 6.5rem;
+  width: 70%;
+  margin: 0;
+  margin-top: 12rem;
+}
+
+.landingcontent img {
+  width: 40rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.landingcontent p {
+  font-size: 2.5rem;
+  width: 70%;
+  margin: 1rem 0;
+  line-height: 5rem;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width: 1462px) {
+  .landingcontent {
+    clear: both;
+    margin-top: 0;
+  }
+
+  .landingcontent,
+  .landingimage {
+    width: 100%;
+    float: none;
+  }
+
+  .landingimage img {
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 95vw;
+    margin: 0;
+  }
+
+  .landingcontent li>a {
+    margin: 0 2rem;
+  }
+
+  .landingcontent ul {
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .landingcontent img {
+    display: block;
+    position: relative;
+    left: calc(50% - calc(calc(max(50%, 400px) - 400px) / 2));
+    transform: translateX(-50%);
+  }
+
+  .landingcontent>h1,
+  .landingcontent>p {
+    width: max(50%, 400px);
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1456px) {
+  .subnavContent {
+    display: none;
+  }
+
+  .subnav {
+    width: 5rem;
+    float: right;
+    line-height: 7rem;
+  }
+
+  .subnav>img {
+    display: inline-block;
+  }
+
+  .courses,
+  .subnav {
+    width: auto;
+  }
+
+}
+
+@media screen and (max-width: 964px) {
+  .coursesContent li:first-of-type {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 849px) {
+  .landingcontent ul {
+    max-width: 60rem;
+  }
+}
+
+@media screen and (max-width: 754px) {
+
+  .coursesContent form,
+  .coursesContent input {
+    width: max(calc(100vw - 49rem), 183px);
+  }
+
+  .coursesContent form {
+    width: max(calc(100vw - 43rem), 243px);
+  }
+}
+
+@media screen and (max-width: 674px) {
+  li[class~="logo"] {
+    color: transparent;
+    font-size: 1px;
+    width: calc(100vw - 5rem - 243px - 12rem);
+  }
+
+  .logo img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .landingcontent ul {
+    max-width: 40rem;
+  }
+}
